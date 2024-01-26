@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Dari Bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Dari Bootsrap -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>TempConv Exercise</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div>
+        <div class="container-fluid">
+            <nav class="navbar bg-dark border-bottom border-body animate__animated animate__fadeInDown"
+                data-bs-theme="dark" id="navbarasoi">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#" id="brand">
+                        <img src="assets/termometer.jpg" alt="Logo" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                        Welcome <3 </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Header End -->
+    <!-- bar animation -->
+    <div class="bar-top"></div>
+    <div class="bar-left"></div>
+    <div class="bar-right"></div>
+    <!-- bar animation end -->
+    <!-- Welcome -->
+    <div class="container1 animate__animated animate__fadeIn animate__delay-1s">
+        <a>
+            <h1 class="h1-jurusan"><mark>Oprec Exercise</mark></h1>
+            <h1 class="h1-nama">Maharaka Fadhilah</h1>
+            <h1 class="h1-jurusan">Computer Engineering 2023</h1>
+            <button class="button-temp" id="temp" onclick="handleClick('temp')">TempConv</button>
+            <button class="button-temp" id="essay" onclick="handleClick('essay')">Theory</button>
+        </a>
+    </div>
+    <!-- Welcome End -->
+
+    <!-- TempConv -->
+    <div class="container" id="123">
+        <h1>Temperature Converter</h1>
+        <label for="temperature">Masukan suhu:</label>
+        <input type="number" id="temperature" placeholder="Enter temperature..." />
+
+        <label for="fromUnit">Dari Satuan:</label>
+        <select id="fromUnit">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+            <option value="rheamur">Rheamur (Re)</option>
+        </select>
+
+        <label for="toUnit">Ke Satuan:</label>
+        <select id="toUnit">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+            <option value="rheamur">Rheamur (Re)</option>
+        </select>
+
+        <button onclick="UbahTemperatur()">Convert</button>
+
+        <div id="result"></div>
+    </div>
+    <!-- TempConv End -->
+
+    <!-- Essay -->
+    <div class="pdf" id="234">
+        <embed src="TheoryExercise.pdf" width="600" height="650" type="application/pdf">
+    </div>
+    <!-- Essay -->
+
+    <!-- Footer -->
+    <div>
+        <div class="Footer">
+            <h1 class="h1-copy">©Rakafadh</h1>
+            <h1 class="h1-footer"> Thank You for using <mark>TempConv</mark> </h1>
+            <a href="https://www.instagram.com/rakaafadh/"><img class="logo" src="assets/iconig2.png" alt="insta"> </a>
+            <a href="https://github.com/rakafadh"><img class="logo" src="assets/icongithub.png" alt="insta"></a>
+            <a href="https://www.linkedin.com/in/maharaka-fadhilah-74792a1bb/"><img class="logo" src="assets/iconlinked.png" alt="insta"></a>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Dari Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Dari Bootsrap -->
+    <script src="script.js"></script>
+</body>
+
+</html>
