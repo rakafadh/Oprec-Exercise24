@@ -157,6 +157,9 @@ mark{
     .h1-footer{
         font-size: 10px;
     }
+    iframe{
+        width: 90%;
+    }
 }
 
 .h1-jurusan{
